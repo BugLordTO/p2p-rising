@@ -1,0 +1,14 @@
+<ion-content padding>
+
+  <div *ngIf="pageList.length > 0">
+      <h1>All page in current project</h1>
+      <p>Please select which page to navigate</p>
+      <ion-list >
+        <ion-item *ngFor="let item of pageList" (click)="Navigate2Page(item.PageName)" color="primary">
+          <ion-icon name="arrow-forward"></ion-icon>
+          {{ item.Name }}
+        </ion-item>
+      </ion-list>
+  </div>
+
+</ion-content>

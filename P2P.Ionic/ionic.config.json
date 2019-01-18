@@ -1,0 +1,7 @@
+{
+  "name": "MContentIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

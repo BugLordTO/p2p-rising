@@ -1,0 +1,25 @@
+<ion-list *ngIf="addressInfo">
+  <ion-item>
+    <ion-label>เลขที่</ion-label>
+    <ion-input type="text" [(ngModel)]="addressInfo.streetAddress"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>ตำบล</ion-label>
+    <ion-input type="text" [(ngModel)]="addressInfo.district"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>อำเภอ</ion-label>
+    <ion-input type="text" [(ngModel)]="addressInfo.city"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>จังหวัด</ion-label>
+    <ion-input type="text" [(ngModel)]="addressInfo.province"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>รหัสไปรษณีย์</ion-label>
+    <ion-input type="text" [(ngModel)]="addressInfo.postalCode"></ion-input>
+  </ion-item>
+  <ion-item>
+    <button ion-button full (click)="saveAddress()">save</button>
+  </ion-item>
+</ion-list>
